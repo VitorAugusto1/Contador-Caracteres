@@ -18,7 +18,7 @@ public class Main {
                 if (Character.isDigit(c)) {
                     numeroDigitos++;
                 }
-                if (!Character.isLetterOrDigit(c) && c != ' ') {
+                if (!Character.isLetterOrDigit(c)) {
                     contadorEspecial++;
                 }
                 if (c == ' ') {

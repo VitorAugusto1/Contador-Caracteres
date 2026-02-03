@@ -4,8 +4,13 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
-            System.out.print("Digite a frase: ");
+            do {
+            System.out.print("Digite a frase (ou 'sair' para encerrar): ");
             String frase = scanner.nextLine();
+            if (frase.equalsIgnoreCase("sair")) {
+                System.out.println("Encerrando o programa.");
+                break;
+            }
             int contadorLetras = 0;
             int contadorEspaços = 0;
             int numeroDigitos = 0;
@@ -36,6 +41,7 @@ public class Main {
                 mensagem += " e " + contadorEspaços + " espaços";
             }
             System.out.println(mensagem);
+            } while (true);
         }
     }
 }

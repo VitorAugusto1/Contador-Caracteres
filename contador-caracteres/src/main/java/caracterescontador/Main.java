@@ -35,7 +35,7 @@ public class Main {
                 mensagem += ", " + numeroDigitos + " dígitos";
             }
             if (contadorEspecial > 0) {
-                mensagem += ", " + contadorEspecial + " caracteres especiaiss";
+                mensagem += ", " + contadorEspecial + " caracteres especiais";
             }
             if (contadorEspaços > 0 ) {
                 mensagem += " e " + contadorEspaços + " espaços";
